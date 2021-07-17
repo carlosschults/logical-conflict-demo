@@ -8,11 +8,7 @@ namespace logical_conflict_demo
         {
             Console.WriteLine("Type the number you want to generate the multiplication table for:");
             var response = int.Parse(Console.ReadLine());
-
-            for (var i = 1; i <= 10; i++)
-            {
-                Console.WriteLine($"{response} X {i} = {response * i}");
-            }
+            Console.WriteLine(Utils.GenerateMultiplicationTableFor(response));
         }
     }
 }
